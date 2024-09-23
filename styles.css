@@ -1,8 +1,8 @@
 .hero {
-    background-image: url('images/lari.jpeg');
+    background-image: url('images/lari2.jpg');
     background-size: cover;
-    background-position: center;
-    height: 70vh;
+    background-position: center 10%;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
