@@ -1,5 +1,5 @@
 
-/* Styling for the carousel navigation icons */
+/* carousel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   width: 60px;
@@ -10,7 +10,14 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Shadow to make it pop */
 }
 
+.carousel-caption h5, .carousel-caption p {
+  text-shadow: 3px 3px 8px  rgba(0, 0, 0, 0.9); /* Bayangan lebih tebal dan jelas */
+  color: rgb(255, 255, 255);
+}
 
+
+
+/* body */
 body {
     padding-top: 50px; /* Tambahkan padding agar tidak tertutup navbar */
   }
@@ -20,6 +27,7 @@ body {
     margin-bottom: 1rem;
     text-align: center;
 }
+
 
 .card img {
     height: 200px;
