@@ -1,20 +1,18 @@
 
-
 /* body */
 body {
   padding-top: 73px; /* Tambahkan padding agar tidak tertutup navbar */
 }
 
 /* navbar */
- /* Aturan CSS default untuk tampilan komputer */
+/* bg hitam dibelakang caousel dan video*/
  .container-fluid {
-  height: 189vh; /* Tinggi untuk tampilan komputer */
+  height: 190vh; /* Tinggi untuk tampilan komputer */
 }
 
-/* Media query untuk tampilan mobile */
 @media only screen and (max-width: 768px) {
   .container-fluid {
-      height: 162vh; /* Ubah tinggi untuk tampilan mobile */
+      height: 190vh;
   }
 }
 
@@ -76,12 +74,12 @@ ul li a:hover::after {
   width: 100%;
 }
 
-/* carousel */
+/* navbar End*/
 
-/* Media query untuk tampilan mobile */
+/* carousel */
 @media only screen and (max-width: 768px) {
   .carousel-item img {
-      height: 400px; /* Tinggi gambar untuk mobile */
+      height: 400px;
   }
 }
 
@@ -100,31 +98,16 @@ ul li a:hover::after {
   color: rgb(255, 255, 255);
 }
 
-/* CSS default untuk komputer (desktop) */
 .carousel-item img {
-  height: 600px; /* Tinggi gambar untuk komputer */
+  height: 600px; 
   width: 100%;
 }
 
 
-
-/* Section */
-.section-title {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-section {
-  width: 100%; /* Memenuhi lebar layar */
-  padding: 45px 0; /* Memberi jarak bagian dalam section */
-
-}
-
 /* Fullscreen video banner styling */
 @media only screen and (max-width: 768px) {
   .banner {
-      height: 100px; /* Tinggi gambar untuk mobile */
+      height: 100px;
   }
 }
 
@@ -178,6 +161,70 @@ section {
 .banner .btn:hover {
   background-color: rgba(255, 255, 255, 1);
 }
+/* end of banner*?
+
+/* Section */
+.section-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section {
+width: 100%; /* Memenuhi lebar layar */
+padding: 45px 0; /* Memberi jarak bagian dalam section */
+
+}
+/* END of section*/
+
+
+/* button */
+/* hanya 1 button pada home*/
+#home .btn-custom {
+  position: relative;
+  display: inline-block;
+  padding:  10px 30px;
+  font-size: 1em;
+  background: transparent;
+  border: 2px solid #0051ff;
+  font-weight: 500;
+  border-radius: 40px;
+  cursor: pointer;
+  color: #0051ff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: 1s;
+  overflow: hidden;
+}
+
+#home .btn-custom:hover {
+  background-color: #0051ff;
+  box-shadow: 0 0 25px #0051ff,
+  0 0 100px #0051ff,
+  0 0 100px #0051ff;
+}
+
+#home .btn-custom span {
+  display: inline-block;
+  transition: transform 0.5s; /* Perbaiki typo tranform menjadi transform */
+  text-shadow: 0 35px #fff;
+  transform: translateY(0px);
+}
+
+#home .btn-custom:hover span.hover{
+  transform: translateY(-35px);
+}
+
+#home .btn-custom:hover span.hover{
+  transform: translateY(-35px);
+}
+
+/* semua button */
+a.btn:hover {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 8px #4070f4;
+}
+/*end of button/
+
 
 
 /* card */
@@ -193,28 +240,36 @@ section {
   height: 200px;
   object-fit: cover;
 }
+/*end of card*/
 
 
 /* footer*/
-
-
-/* Mengatur ukuran form */
-.contact-form {
-  max-width: 300px; /* Mengatur lebar maksimal form */
-  margin: 0 auto; /* Agar form berada di tengah */
+/* Form */
+.contact-me {
+  text-align: center;
 }
 
-/* Mengatur ukuran input dan textarea */
+@media only screen and (min-width: 768px) {
+  .contact-me {
+      text-align: center;
+  }
+}
+
+.contact-form {
+  max-width: 300px; 
+  margin: 0 auto;
+}
+
 .contact-form input, 
 .contact-form textarea {
-  width: 100%; /* Mengatur input field dan textarea menjadi 100% dari max-width */
-  font-size: 0.9rem; /* Mengurangi ukuran teks */
+  width: 100%;
+  font-size: 0.9rem;
 }
 
 /* Mengatur ukuran tombol */
 .contact-form button {
-  font-size: 0.85rem; /* Mengurangi ukuran teks tombol */
-  padding: 5px 10px; /* Mengurangi padding tombol */
+  font-size: 0.85rem; 
+  padding: 5px 10px;
 }
 
 
