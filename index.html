@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -6,6 +6,7 @@
     <title>StayHealthy</title>
     <link rel="stylesheet" href="./styles.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
     
@@ -44,7 +45,7 @@
     <!-- end of menu navigasi-->
 
     <!-- first layout start-->
-    <div class="container-fluid text-center bg-dark text-light " style="height: 162vh;">
+    <div class="container-fluid text-center bg-dark text-light " style="height: 180vh;">
         <!-- carousel images-->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2800">
     <div class="carousel-indicators">
@@ -87,33 +88,18 @@
     <!-- end  of carousel images-->
 
     <section id="home">
-        <div class="row text-center align-items-center mt-0">
-          <div class="col-12">
-            <img src="https://png.pngtree.com/png-vector/20220710/ourmid/pngtree-selamat-datang-banner-design-element-png-image_5755930.png" style="width: 150;" height="150">
-            <h2>Selamat Datang Di StayHealthy</h2>         
-            <p>Temukan panduan gaya hidup sehat, Olahraga, resep makanan sehat, dan tips gizi yang tepat untuk Anda!</p>   
-          </div>
-        </div>
-        <div class="row mt-2">
-            <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">About Us</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+        <section class="banner">
+            <video autoplay muted loop>
+                <source src="videos/RUN.mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="content">
+              <h1>Welcome to Our Home Page</h1>
+              <p>Explore our website and discover amazing things.</p>
+              <a href="#explore" class="btn">Explore Now</a>
             </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Panduan Kesehatan</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          </section>
+    </section>
     </div>
     <!-- first layout end -->
 
@@ -253,27 +239,51 @@
 </div>
 </section>
 
-<!-- Section Kontak Kami -->
-<section id="kontak" class="container mt-5 mb-5">
-<h2 class="section-title">Kontak Kami</h2>
-<form>
-  <div class="mb-3">
-      <label for="name" class="form-label">Nama</label>
-      <input type="text" class="form-control" id="name" placeholder="Nama Anda">
-  </div>
-  <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Email Anda">
-  </div>
-  <div class="mb-3">
-      <label for="message" class="form-label">Pesan</label>
-      <textarea class="form-control" id="message" rows="3" placeholder="Pesan Anda"></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary">Kirim</button>
-</form>
-</section>
 
+<!-- Footer -->
+<footer class="footer bg-dark text-light pt-4">
+    <div class="container">
+        <div class="row">
+            <!-- Left Section: Navigation Links and Social Media Icons -->
+            <div class="col-md-6">
+                <h5>ACME CO INC.</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Home</a></li>
+                    <li><a href="#" class="text-light">About Us</a></li>
+                    <li><a href="#" class="text-light">Products</a></li>
+                    <li><a href="#" class="text-light">Partners</a></li>
+                </ul>
+                <!-- Social Media Icons -->
+                <div class="mt-3">
+                    <a href="#" class="text-light me-3"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fa-brands fa-github fa-lg"></i></a>
+                    <a href="#" class="text-light"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
 
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-  </body>
+            <!-- Right Section: Contact Us Form -->
+            <div class="col-md-6">
+                <h5 style="margin-left: 167px ;">Contact Us</h5>
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" placeholder="Enter email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control form-control-sm" id="exampleMessage" rows="3" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary btn-sm">Send</button>
+                </form>
+            </div>
+            
+        </div>
+        <hr class="border-secondary">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2024 StayHealthy. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
