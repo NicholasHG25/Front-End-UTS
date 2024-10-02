@@ -1,18 +1,18 @@
 
 /* body */
 body {
-  padding-top: 73px; /* Tambahkan padding agar tidak tertutup navbar */
+  padding-top: 73px; /*padding agar tidak tertutup navbar */
 }
 
 /* navbar */
 /* bg hitam dibelakang caousel dan video*/
  .container-fluid {
-  height: 190vh; /* Tinggi untuk tampilan komputer */
+  height: 196vh; /* Tinggi untuk tampilan komputer */
 }
 
 @media only screen and (max-width: 768px) {
   .container-fluid {
-      height: 190vh;
+    height:196vh;
   }
 }
 
@@ -77,10 +77,15 @@ ul li a:hover::after {
 /* navbar End*/
 
 /* carousel */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .carousel-item img {
-      height: 400px;
+    height: 450px !important;
   }
+}
+
+.carousel-item img {
+  height: 650px; 
+  width: 100%;
 }
 
 .carousel-control-prev-icon,
@@ -97,11 +102,7 @@ ul li a:hover::after {
   text-shadow: 3px 3px 8px  rgba(0, 0, 0, 0.9); /* Bayangan lebih tebal dan jelas */
   color: rgb(255, 255, 255);
 }
-
-.carousel-item img {
-  height: 600px; 
-  width: 100%;
-}
+/* End Of Carousel */
 
 
 /* Fullscreen video banner styling */
@@ -161,7 +162,7 @@ ul li a:hover::after {
 .banner .btn:hover {
   background-color: rgba(255, 255, 255, 1);
 }
-/* end of banner*?
+/* end of banner*/
 
 /* Section */
 .section-title {
@@ -206,7 +207,7 @@ padding: 45px 0; /* Memberi jarak bagian dalam section */
 
 #home .btn-custom span {
   display: inline-block;
-  transition: transform 0.5s; /* Perbaiki typo tranform menjadi transform */
+  transition: transform 0.5s;
   text-shadow: 0 35px #fff;
   transform: translateY(0px);
 }
@@ -350,7 +351,7 @@ html,body{
   font-size: 0.9rem;
 }
 
-/* Mengatur ukuran tombol */
+  /* Mengatur ukuran tombol */
 .contact-form button {
   font-size: 0.85rem; 
   padding: 5px 10px;
