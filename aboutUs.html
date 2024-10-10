@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<!-- Remixicons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Resep</title>
+		<style>
+			body {
+				font-family: "Roboto", sans-serif;
+				margin: 0;
+				background-color: #f8f9fa;
+			}
+			.containers {
+                max-width: 800px;
+                margin: 40px auto;
+                padding: 20px;
+                background-color: #ffffff; /* Menambahkan background putih */
+                border-radius: 8px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Memperhalus shadow */
+                line-height: 1.6; /* Menambahkan jarak antar baris agar lebih mudah dibaca */
+            }
+			h1 {
+                font-size: 2.5rem;
+                color: #007bff; /* Warna lebih cerah untuk kesan menarik */
+                margin-bottom: 20px; /* Jarak dengan konten di bawahnya */
+                text-align: center;
+            }
+            p {
+                text-indent: 20px; /* Memberikan indentasi pada kalimat pertama */
+                margin-bottom: 20px;
+            }
+
+            .recipe p {
+
+                font-size: 1.1rem;
+                color: #555; /* Warna teks abu-abu agar nyaman dilihat */
+                text-align: justify; /* Meratakan teks agar lebih rapi */
+                margin: 20px 0;
+            }
+
+            .recipe img {
+                margin-bottom: 20px; /* Jarak gambar dengan teks di bawahnya */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow untuk menambah dimensi */
+            }
+			.recipe {
+				margin-bottom: 40px;
+			}
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+				margin: 0 auto;
+				border-radius: 8px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- HEADER-->
+		<header class="header" id="header" style="margin-top: -1rem;">
+			<nav class="nav container" style="padding-top: 1rem;">
+				<a href="#" class="nav__logo">Stay Healthy</a>
+	
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">
+								<i class="ri-arrow-right-up-line"></i>
+								<span>Home</span>
+							</a>
+						</li>
+	
+						<li class="nav__item">
+							<a href="index.html#olahraga" class="nav__link">
+								<i class="ri-arrow-right-up-line"></i>
+								<span>Olahraga</span>
+							</a>
+						</li>
+						
+	
+						<li class="nav__item">
+							<a href="index.html#rekomendasi" class="nav__link">
+								<i class="ri-arrow-right-up-line"></i>
+								<span>Rekomendasi</span>
+							</a>
+						</li>
+	
+						<li class="nav__item">
+							<a href="index.html#resep" class="nav__link">
+								<i class="ri-arrow-right-up-line"></i>
+								<span>Resep</span>
+							</a>
+						</li>
+	
+						<li class="nav__item">
+							<a href="index.html#nutrisi" class="nav__link">
+								<i class="ri-arrow-right-up-line"></i>
+								<span>Nutrisi</span>
+							</a>
+						</li>
+					</ul>
+	
+					<!-- Close button -->
+					 <div class="nav__close" id="nav-close">
+						<i class="ri-close-large-line"></i>
+					 </div>
+	
+					 <div class="nav__social">
+						<a href="#" id="search-icon" class="nav__social-link">
+							<i class="ri-search-line"></i>
+						</a>
+						<!-- Menggunakan class search-box dari kode di atas -->
+						<div class="search-box" style="display: none;">
+							<div class="row">
+								<input type="text" id="input-box" placeholder="Cari..." autocomplete="off">
+								<button><i class="ri-search-line"></i></button>
+							</div>
+							<div class="result-box"></div>
+						</div>
+					</div>
+					
+								
+				</div> 
+	
+				<!-- Toogle button -->
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="ri-menu-line"></i>
+				</div>
+			</nav>
+		</header>
+
+		<div class="containers">
+			<h1>About Us</h1>
+			<div class="recipe">
+                <img
+                    src="https://t3.ftcdn.net/jpg/01/35/70/90/360_F_135709080_2XHH0eeTGZ6rAaxgyuLKKdTaUCZAgPCZ.jpg"
+                    alt="Salad Segar"
+                />
+                <p>
+                    Website ini merupakan platform panduan gaya hidup sehat yang memiliki fokus pada Kesehatan Fisik, olahraga, fitness, resep makanan sehat, dan nutrisi. Pengunjung akan menemukan berbagai informasi seperti tips berolahraga, panduan langkah-langkah latihan fitness, panduan tentang gizi seimbang, hingga resep makanan sehat yang mudah dipraktikkan. Website ini bertujuan untuk membantu, memotivasi, dan memberikan inspirasi kepada pengunjung dalam mengadopsi kebiasaan sehat yang dapat diterapkan dalam rutinitas sehari-hari. Dengan informasi yang jelas dan praktis, website ini ingin memudahkan orang-orang untuk memulai perjalanan menuju hidup yang lebih sehat.
+                </p>
+            
+                <!-- Menambahkan paragraf baru -->
+                <h2>Latar Belakang Pembuatan</h2>
+                <p>
+                    Seiring berkembangnya kesadaran masyarakat akan pentingnya kesehatan, semakin banyak orang yang ingin memulai gaya hidup sehat, namun seringkali mereka merasa kesulitan karena kurangnya pengetahuan dan panduan yang tepat. Banyak dari mereka tidak tahu harus memulai dari mana terkait olahraga, gizi, atau pola makan sehat yang efektif. Website ini dibuat untuk mengatasi hambatan tersebut, menyediakan informasi yang dapat dipercaya serta mudah diakses. Dengan bahasa yang sederhana dan materi yang relevan, tujuan utamanya adalah membantu masyarakat memahami bahwa keseimbangan antara olahraga, nutrisi yang baik, dan pola makan sehat merupakan kunci untuk mencapai kesehatan optimal.
+                </p>
+            
+                <h2>Sasaran Pasar / Target Market</h2>
+                <p>
+                    Website ini ditujukan untuk individu berusia 18 hingga 40 tahun yang ingin memperbaiki atau memulai gaya hidup sehat. Target audiens utama adalah remaja, dewasa, hingga orang tua yang ingin meningkatkan kebugaran fisik, mencari panduan olahraga yang tepat, resep makanan sehat yang mudah dibuat, serta edukasi mengenai pentingnya nutrisi seimbang. Selain itu, website ini juga cocok bagi mereka yang berusaha mencapai bentuk tubuh ideal, memperbaiki rutinitas olahraga, atau sekadar menjaga kesehatan dalam jangka panjang.
+                </p>
+            </div>
+            
+		</div>
+
+
+		<footer>
+			<div class="footer-container">
+				<div class="footer-contact">
+					<h3>Contact Us</h3>
+					<form class="contact-form" action="https://formspree.io/f/mnnqarwb" method="POST">
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required />
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" required />
+						</div>
+						<div class="form-group">
+							<label for="message">Message:</label>
+							<textarea id="message" name="message" required></textarea>
+						</div>
+						<button type="submit">Send Message</button>
+					</form>
+				</div>
+				<div class="wrapper">
+					<h3>Follow Us</h3>
+                    <div class="button">
+                        <a href="https://facebook.com" target="_blank">
+                            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="https://twitter.com" target="_blank">
+                            <div class="icon"><i class="fab fa-twitter"></i></div>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="https://github.com/NicholasHG25/Front-End-UTS" target="_blank">
+                            <div class="icon"><i class="fab fa-github"></i></div>
+                            <span>Github</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="https://instagram.com" target="_blank">
+                            <div class="icon"><i class="fab fa-instagram"></i></div>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2024 Stay Healthy. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
