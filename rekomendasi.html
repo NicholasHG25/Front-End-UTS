@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<!-- Remixicons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Rekomendasi</title>
+		<style>
+			body {
+				font-family: "Roboto", sans-serif;
+				margin: 0;
+				background-color: #f8f9fa;
+			}
+			.containers {
+				max-width: 800px;
+				margin: auto;
+				padding: 20px;
+				border-radius: 8px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+			h1 {
+				text-align: center;
+				color: #333;
+			}
+			.recommendation {
+				margin-bottom: 40px;
+			}
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+				margin: 0 auto;
+				border-radius: 8px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!-- HEADER-->
+		<header class="header" id="header" style="margin-top: -1rem;">
+			<nav class="nav container" style="padding-top: 1rem;">
+				<a href="#" class="nav__logo">Stay Healthy</a>
+	
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">
+								<i class="ri-arrow-right-up-line"></i>
+								<span>Home</span>
+							</a>
+						</li>
+	
+						<li class="nav__item">
+							<a href="index.html#olahraga" class="nav__link">
+								<i class="ri-arrow-right-up-line"></i>
+								<span>Olahraga</span>
+							</a>
+						</li>
+						
+	
+						<li class="nav__item">
+							<a href="index.html#rekomendasi" class="nav__link">
+								<i class="ri-arrow-right-up-line"></i>
+								<span>Rekomendasi</span>
+							</a>
+						</li>
+	
+						<li class="nav__item">
+							<a href="index.html#resep" class="nav__link">
+								<i class="ri-arrow-right-up-line"></i>
+								<span>Resep</span>
+							</a>
+						</li>
+	
+						<li class="nav__item">
+							<a href="index.html#nutrisi" class="nav__link">
+								<i class="ri-arrow-right-up-line"></i>
+								<span>Nutrisi</span>
+							</a>
+						</li>
+					</ul>
+	
+					<!-- Close button -->
+					 <div class="nav__close" id="nav-close">
+						<i class="ri-close-large-line"></i>
+					 </div>
+	
+					 <div class="nav__social">
+						<a href="#" id="search-icon" class="nav__social-link">
+							<i class="ri-search-line"></i>
+						</a>
+						<!-- Menggunakan class search-box dari kode di atas -->
+						<div class="search-box" style="display: none;">
+							<div class="row">
+								<input type="text" id="input-box" placeholder="Cari..." autocomplete="off">
+								<button><i class="ri-search-line"></i></button>
+							</div>
+							<div class="result-box"></div>
+						</div>
+					</div>
+					
+								
+				</div> 
+	
+				<!-- Toogle button -->
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="ri-menu-line"></i>
+				</div>
+			</nav>
+		</header>
+
+		<div class="containers">
+			<h1>Rekomendasi</h1>
+
+			<div class="recommendation">
+				<h2>1. Vitamin</h2>
+				<img
+					src="https://img.freepik.com/free-vector/vitamin-complex-package_23-2148488954.jpg?ga=GA1.1.1322720273.1722496061&semt=ais_hybrid"
+					alt="Vitamin"
+				/>
+				<p>
+					Vitamin adalah nutrisi penting yang dibutuhkan oleh tubuh untuk
+					berfungsi dengan baik. Makanan yang kaya akan vitamin dapat
+					meningkatkan kesehatan Anda secara keseluruhan.
+				</p>
+				<h3>Manfaat Vitamin:</h3>
+				<ul>
+					<li>Meningkatkan sistem kekebalan tubuh.</li>
+					<li>Membantu dalam pembentukan sel darah merah.</li>
+					<li>Mendukung kesehatan kulit dan mata.</li>
+					<li>Membantu metabolisme energi.</li>
+				</ul>
+				<p>
+					Untuk mendapatkan vitamin yang cukup, Anda disarankan untuk
+					mengonsumsi berbagai jenis makanan, termasuk buah-buahan, sayuran, dan
+					biji-bijian.
+				</p>
+			</div>
+
+			<div class="recommendation">
+				<h2>2. Protein</h2>
+				<img
+					src="https://as1.ftcdn.net/v2/jpg/02/13/71/36/1000_F_213713637_G1Jp5JkgLN13xZZVxXR8YQC34PXKnI1t.jpg"
+					alt="Protein"
+				/>
+				<p>
+					Protein adalah makronutrisi yang penting untuk pertumbuhan dan
+					perbaikan jaringan. Mengonsumsi cukup protein membantu membangun otot
+					dan menjaga kesehatan tubuh.
+				</p>
+				<h3>Manfaat Protein:</h3>
+				<ul>
+					<li>Membangun dan memperbaiki jaringan otot.</li>
+					<li>Mendukung fungsi imun tubuh.</li>
+					<li>Menjaga kesehatan tulang.</li>
+					<li>Memberikan rasa kenyang lebih lama.</li>
+				</ul>
+				<p>
+					Anda bisa mendapatkan protein dari berbagai sumber, termasuk daging,
+					ikan, telur, dan produk susu.
+				</p>
+			</div>
+
+			<div class="recommendation">
+				<h2>3. Latihan</h2>
+				<img
+					src="https://img.freepik.com/free-photo/athlete-stretching-outdoors-before-jogging_23-2148531052.jpg?ga=GA1.1.1322720273.1722496061&semt=ais_hybrid"
+					alt="Latihan"
+				/>
+				<p>
+					Latihan fisik secara rutin sangat penting untuk kesehatan jantung,
+					kebugaran fisik, dan kesejahteraan mental. Temukan jenis latihan yang
+					sesuai untuk Anda.
+				</p>
+				<h3>Manfaat Latihan:</h3>
+				<ul>
+					<li>Meningkatkan kesehatan jantung.</li>
+					<li>Membantu mengontrol berat badan.</li>
+					<li>Meningkatkan kualitas tidur.</li>
+					<li>Menjaga kesehatan mental dan mengurangi stres.</li>
+				</ul>
+				<p>
+					Latihan dapat mencakup berbagai aktivitas, seperti berjalan, berlari,
+					bersepeda, atau olahraga di gym.
+				</p>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer-container">
+				<div class="footer-contact">
+					<h3>Contact Us</h3>
+					<form class="contact-form" action="https://formspree.io/f/mnnqarwb" method="POST">
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required />
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" required />
+						</div>
+						<div class="form-group">
+							<label for="message">Message:</label>
+							<textarea id="message" name="message" required></textarea>
+						</div>
+						<button type="submit">Send Message</button>
+					</form>
+				</div>
+				<div class="wrapper">
+					<h3>Follow Us</h3>
+                    <div class="button">
+                        <a href="https://facebook.com" target="_blank">
+                            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="https://twitter.com" target="_blank">
+                            <div class="icon"><i class="fab fa-twitter"></i></div>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="https://github.com/NicholasHG25/Front-End-UTS" target="_blank">
+                            <div class="icon"><i class="fab fa-github"></i></div>
+                            <span>Github</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="https://instagram.com" target="_blank">
+                            <div class="icon"><i class="fab fa-instagram"></i></div>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2024 Stay Healthy. All rights reserved.</p>
+			</div>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
