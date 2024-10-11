@@ -17,32 +17,90 @@
 
 		<title>Tips Sehat</title>
 		<style>
-			body {
-				font-family: "Roboto", sans-serif;
-				margin: 0;
-				background-color: #f8f9fa;
-			}
-			.containers {
-				max-width: 800px;
-				margin: auto;
-				padding: 20px;
-				border-radius: 8px;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			}
-			h1 {
-				text-align: center;
-				color: #333;
-			}
-			.tip {
-				margin-bottom: 40px;
-			}
-			img {
-				display: block;
-				max-width: 100%;
-				height: auto;
-				margin: 0 auto;
-				border-radius: 8px;
-			}
+	  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive layout */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .section {
+                width: 48%;
+            }
+        }
+
+        /* Button styles */
+        .toggle-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .toggle-btn:hover {
+            background-color: #218838;
+        }
+
+        .hidden {
+            display: none;
+        }
 		</style>
 	</head>
 	<body>
@@ -119,33 +177,123 @@
 			</nav>
 		</header>
 
-		<div class="containers">
-			<h1>Tips Sehat</h1>
-
-			<div class="tip">
-				<h2>1. Panduan Makanan Seimbang</h2>
-				<img
-					src="https://via.placeholder.com/600x400?text=Panduan+Makanan+Seimbang"
-					alt="Panduan Makanan Seimbang"
-				/>
-				<p>
-					Pelajari cara menjaga keseimbangan gizi dalam makanan harian Anda.
-				</p>
+		<h1>Panduan Makanan Seimbang</h1>
+    
+		<div class="container">
+			<div class="section">
+				<h2>Makanan yang Harus Dikonsumsi</h2>
+				<img src="https://images.pexels.com/photos/162825/healthy-food-fresh-organic-162825.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Buah dan Sayuran">
+				<ul id="include-list">
+					<li>Buah dan Sayuran
+						<ul>
+							<li>Sayuran Hijau (Bayam, Kale)</li>
+							<li>Buah Berry (Strawberry, Blueberry)</li>
+							<li>Buah Citrus (Jeruk, Lemon)</li>
+							<li>Sayuran Cruciferous (Brokoli, Kembang Kol)</li>
+						</ul>
+					</li>
+					<li>Biji-bijian Utuh
+						<ul>
+							<li>Oat</li>
+							<li>Beras Merah</li>
+							<li>Quinoa</li>
+							<li>Roti Gandum Utuh</li>
+						</ul>
+					</li>
+					<li>Protein Rendah Lemak
+						<ul>
+							<li>Ayam</li>
+							<li>Ikan (Salmon, Tuna)</li>
+							<li>Kacang-kacangan dan Legum</li>
+							<li>Telur</li>
+						</ul>
+					</li>
+					<li>Kacang-kacangan dan Biji-bijian
+						<ul>
+							<li>Almond</li>
+							<li>Chia Seeds</li>
+							<li>Flaxseeds</li>
+							<li>Walnut</li>
+						</ul>
+					</li>
+					<li>Produk Susu Rendah Lemak
+						<ul>
+							<li>Yogurt</li>
+							<li>Susu</li>
+							<li>Keju Cottage</li>
+						</ul>
+					</li>
+				</ul>
+				<button class="toggle-btn" onclick="toggleContent('include-list')">Sembunyikan Daftar</button>
 			</div>
-
-			<div class="tip">
-				<h2>2. Makanan yang Harus Dihindari</h2>
-				<img
-					src="https://via.placeholder.com/600x400?text=Makanan+yang+Harus+Dihindari"
-					alt="Makanan yang Harus Dihindari"
-				/>
-				<p>
-					Ketahui jenis makanan yang harus Anda hindari untuk menjaga kesehatan
-					tubuh.
-				</p>
+	
+			<div class="section">
+				<h2>Makanan yang Harus Dihindari</h2>
+				<img src="https://images.pexels.com/photos/958544/pexels-photo-958544.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Makanan Gorengan">
+				<ul id="avoid-list">
+					<li>Minuman Manis
+						<ul>
+							<li>Soda</li>
+							<li>Kopi dengan Pemanis</li>
+							<li>Minuman Energi</li>
+						</ul>
+					</li>
+					<li>Makanan Olahan
+						<ul>
+							<li>Mie Instan</li>
+							<li>Daging Olahan (Sosis, Hot Dog)</li>
+							<li>Makanan Kalengan dengan Pengawet Tinggi</li>
+						</ul>
+					</li>
+					<li>Makanan Gorengan
+						<ul>
+							<li>Kentang Goreng</li>
+							<li>Ayam Goreng</li>
+							<li>Tempura</li>
+						</ul>
+					</li>
+					<li>Karbohidrat Olahan
+						<ul>
+							<li>Roti Putih</li>
+							<li>Pasta dari Tepung Putih</li>
+							<li>Sereal Sarapan Bergula</li>
+						</ul>
+					</li>
+					<li>Makanan Tinggi Garam
+						<ul>
+							<li>Camilan Asin (Keripik, Pretzel)</li>
+							<li>Saus Olahan (Kecap Asin, Saus BBQ)</li>
+							<li>Makanan Acar</li>
+						</ul>
+					</li>
+				</ul>
+				<button class="toggle-btn" onclick="toggleContent('avoid-list')">Sembunyikan Daftar</button>
+			</div>
+	
+			<div class="section">
+				<h2>Tips untuk Pola Makan Seimbang</h2>
+				<img src="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tips Pola Makan Seimbang">
+				<p>1. Minum banyak air setiap hari untuk tetap terhidrasi.</p>
+				<p>2. Sertakan berbagai kelompok makanan dalam setiap hidangan untuk memastikan kebutuhan nutrisi terpenuhi.</p>
+				<p>3. Batasi konsumsi gula dan garam dengan menghindari makanan olahan dan memilih bahan alami.</p>
+				<p>4. Kontrol porsi makan untuk menghindari makan berlebihan dan menjaga berat badan ideal.</p>
+				<p>5. Rencanakan makanan di awal minggu untuk menghindari pilihan yang tidak sehat saat terburu-buru.</p>
+			</div>
+	
+			<div class="section">
+				<h2>Manfaat Pola Makan Seimbang</h2>
+				<img src="https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Manfaat Pola Makan Seimbang">
+				<ul>
+					<li>Meningkatkan Energi</li>
+					<li>Pencernaan yang Lebih Baik</li>
+					<li>Mengurangi Risiko Penyakit Kronis (Penyakit Jantung, Diabetes)</li>
+					<li>Membantu Pengelolaan Berat Badan</li>
+					<li>Meningkatkan Mood dan Kesehatan Mental</li>
+					<li>Meningkatkan Fungsi Imun</li>
+				</ul>
 			</div>
 		</div>
-		
+
 		<footer>
 			<div class="footer-container">
 				<div class="footer-contact">
@@ -198,6 +346,20 @@
 				<p>&copy; 2024 Stay Healthy. All rights reserved.</p>
 			</div>
 		</footer>
+		<script>
+	 function toggleContent(listId) {
+            const list = document.getElementById(listId);
+            const button = list.nextElementSibling;
+            if (list.classList.contains('hidden')) {
+                list.classList.remove('hidden');
+                button.textContent = 'Sembunyikan Daftar';
+            } else {
+                list.classList.add('hidden');
+                button.textContent = 'Tampilkan Daftar';
+            }
+        }
+        
+		</script>
 		<script src="script.js"></script>
 	</body>
 </html>
