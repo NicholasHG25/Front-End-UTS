@@ -22,13 +22,27 @@ if(navClose){
 /* fitur search */
 // Daftar kata kunci dengan URL tujuan yang terkait
 let availableKeywords = [
-    { keyword: 'HTML', url: '' },
-    { keyword: 'CSS', url: 'https://example.com/css-tutorial' },
-    { keyword: 'Easy tutorial', url: 'https://example.com/easy-tutorial' },
-    { keyword: 'web design', url: 'https://example.com/web-design' },
-    { keyword: 'javasqrip', url: 'https://example.com/javascript-tutorial' }, // Typo example
-    { keyword: 'where to learn coding online', url: 'https://example.com/learn-coding-online' },
-    { keyword: 'how to vreate website', url: 'https://example.com/create-website' }, // Typo example
+    { keyword: 'Olahraga', url: 'panduan.html' },
+    { keyword: 'Latihan Kardio', url: 'panduan.html' },
+    { keyword: 'Latihan kekuatan', url: 'panduan.html' },
+    { keyword: 'latihan fleksibilitas', url: 'panduan.html' },
+
+
+    { keyword: 'Resep', url: 'resep.html' },
+    { keyword: 'Smoothie Buah', url: 'resep.html' },
+    { keyword: 'Ayam panggang', url: 'resep.html' },
+    { keyword: 'Salad segar', url: 'resep.html' },
+
+    { keyword: 'Rekomendasi', url: 'rekomendasi.htlml' },
+    { keyword: 'Vitamin', url: 'rekomendasi.htlml' },
+    { keyword: 'Protein', url: 'rekomendasi.htlml' },
+    { keyword: 'Latihan', url: 'rekomendasi.htlml' },
+
+    { keyword: 'Tips Nutrisi', url: 'tips.html' },
+    { keyword: 'Panduan makanan sehat', url: 'tips.html' },
+    { keyword: 'makanan yang harus dihindari', url: 'tips.html' },
+    { keyword: 'Tentang kami', url: 'tips.html' },
+    
 ];
 
 const searchIcon = document.getElementById("search-icon");
@@ -79,14 +93,14 @@ function display(result){
 // Fungsi untuk memilih hasil pencarian dan menyimpan URL
 function selectInput(list){
     inputBox.value = list.innerHTML;
-    selectedUrl = list.getAttribute("data-url"); // Menyimpan URL yang dipilih
+    selectedUrl = list.getAttribute("data-url");
     resultsBox.innerHTML = '';
 }
 
 // Fungsi untuk mengarahkan ke URL saat tombol "Search" diklik
 searchButton.addEventListener("click", function() {
     if (selectedUrl) {
-        window.location.href = selectedUrl; // Arahkan ke URL yang dipilih
+        window.location.href = selectedUrl; 
     } else {
         alert('Silakan pilih kata kunci dari daftar terlebih dahulu.');
     }
