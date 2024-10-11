@@ -17,32 +17,87 @@
 
 		<title>Resep</title>
 		<style>
-			body {
-				font-family: "Roboto", sans-serif;
-				margin: 0;
-				background-color: #f8f9fa;
-			}
-			.containers {
-				max-width: 800px;
-				margin: auto;
-				padding: 20px;
-				border-radius: 8px;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			}
-			h1 {
-				text-align: center;
-				color: #333;
-			}
-			.recipe {
-				margin-bottom: 40px;
-			}
-			img {
-				display: block;
-				max-width: 100%;
-				height: auto;
-				margin: 0 auto;
-				border-radius: 8px;
-			}
+	      * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #4CAF50;
+        }
+
+        .recipe {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+
+        .recipe:hover {
+            transform: translateY(-5px);
+        }
+
+        .recipe h2 {
+            color: #4CAF50;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .recipe img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .recipe p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .recipe h3 {
+            margin-top: 10px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+		
+        .recipe ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .recipe-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .recipe-btn:hover {
+            background-color: #45a049;
+        }
 		</style>
 	</head>
 	<body>
@@ -120,40 +175,134 @@
 		</header>
 
 
-		<div class="containers">
-			<h1>Resep Sehat</h1>
-
+		<div class="container">
+			<h1>Resep Sehat - Memasak Ayam</h1>
+	
 			<div class="recipe">
-				<h2>1. Salad Segar</h2>
-				<img
-					src="https://img.freepik.com/free-photo/flat-lay-salad-with-chicken-sesame-seeds_23-2148700369.jpg?ga=GA1.1.1322720273.1722496061&semt=ais_hybrid"
-					alt="Salad Segar"
-				/>
-				<p>
-					Resep salad sehat dengan kombinasi sayuran segar dan dressing rendah
-					kalori.
-				</p>
-			</div>
-
-			<div class="recipe">
-				<h2>2. Smoothie Buah</h2>
-				<img
-					src="https://t3.ftcdn.net/jpg/02/59/32/30/240_F_259323042_XHov0Lty6V40zHHqHiNwNCjVGQ5wWoqu.jpg"
-					alt="Smoothie Buah"
-				/>
-				<p>Nikmati smoothie penuh nutrisi untuk sarapan sehat Anda.</p>
-			</div>
-
-			<div class="recipe">
-				<h2>3. Ayam Panggang</h2>
+				<h2>1. Ayam Panggang Rempah</h2>
 				<img
 					src="https://img.freepik.com/free-photo/grilled-chicken_144627-9151.jpg?ga=GA1.1.1322720273.1722496061&semt=ais_hybrid"
-					alt="Ayam Panggang"
+					alt="Ayam Panggang Rempah"
 				/>
-				<p>Resep ayam panggang rendah lemak yang kaya protein.</p>
+				<p>
+					Ayam panggang rempah adalah hidangan yang lezat dan penuh rasa. 
+					Berikut adalah cara memasaknya:
+				</p>
+				<h3>Bahan-bahan:</h3>
+				<ul>
+					<li>1 kg ayam, potong sesuai selera</li>
+					<li>2 sdm minyak zaitun</li>
+					<li>1 sdm bawang putih cincang</li>
+					<li>1 sdm jahe parut</li>
+					<li>1 sdm paprika bubuk</li>
+					<li>1 sdm garam</li>
+					<li>1/2 sdt merica</li>
+					<li>1 sdt air lemon</li>
+				</ul>
+				<h3>Langkah-langkah:</h3>
+				<ol>
+					<li>Campurkan semua bahan dalam mangkuk besar.</li>
+					<li>Masukkan potongan ayam ke dalam campuran bumbu, aduk rata.</li>
+					<li>Diamkan selama 30 menit agar bumbu meresap.</li>
+					<li>Panaskan oven pada suhu 200°C.</li>
+					<li>Panggang ayam dalam oven selama 45-50 menit hingga matang.</li>
+					<li>Sajikan dengan sayuran segar atau nasi.</li>
+				</ol>
+				<button class="recipe-btn">Lihat Resep Lainnya</button>
+			</div>
+	
+			<div class="recipe">
+				<h2>2. Ayam Teriyaki</h2>
+				<img
+					src="https://img.freepik.com/free-photo/teriyaki-chicken-with-broccoli_23-2148700410.jpg?ga=GA1.1.1322720273.1722496061&semt=ais_hybrid"
+					alt="Ayam Teriyaki"
+				/>
+				<p>
+					Ayam teriyaki adalah hidangan khas Jepang yang mudah dibuat dan 
+					sangat lezat. Berikut cara membuatnya:
+				</p>
+				<h3>Bahan-bahan:</h3>
+				<ul>
+					<li>500 gram ayam fillet, potong dadu</li>
+					<li>3 sdm kecap manis</li>
+					<li>2 sdm mirin (atau bisa diganti dengan gula)</li>
+					<li>1 sdm minyak sayur</li>
+					<li>1 sdm biji wijen</li>
+					<li>1 batang daun bawang, iris halus</li>
+				</ul>
+				<h3>Langkah-langkah:</h3>
+				<ol>
+					<li>Campurkan kecap manis, mirin, dan minyak sayur dalam mangkuk.</li>
+					<li>Masukkan potongan ayam ke dalam campuran dan diamkan selama 15 menit.</li>
+					<li>Panaskan wajan anti lengket dan masak ayam hingga kecoklatan.</li>
+					<li>Tuangkan sisa bumbu ke atas ayam dan masak hingga mengental.</li>
+					<li>Taburi dengan biji wijen dan daun bawang sebelum disajikan.</li>
+				</ol>
+				<button class="recipe-btn">Lihat Resep Lainnya</button>
+			</div>
+	
+			<div class="recipe">
+				<h2>3. Ayam Curry</h2>
+				<img
+					src="https://tse1.mm.bing.net/th?id=OIP.AwdCCVlXkCTZtksv4v12lAHaFU&pid=Api&rs=1&c=1&qlt=95&w=137&h=98"
+					alt="Ayam Curry"
+				/>
+				<p>
+					Ayam curry adalah hidangan kaya rasa yang pasti disukai banyak orang. 
+					Simak cara memasaknya:
+				</p>
+				<h3>Bahan-bahan:</h3>
+				<ul>
+					<li>1 kg ayam, potong sesuai selera</li>
+					<li>2 sdm minyak sayur</li>
+					<li>1 bawang bombay, cincang halus</li>
+					<li>2 sdm pasta curry</li>
+					<li>400 ml santan</li>
+					<li>Garam dan merica secukupnya</li>
+					<li>Daun ketumbar untuk taburan</li>
+				</ul>
+				<h3>Langkah-langkah:</h3>
+				<ol>
+					<li>Panaskan minyak dalam wajan, tumis bawang bombay hingga harum.</li>
+					<li>Tambahkan pasta curry dan masak selama 2 menit.</li>
+					<li>Masukkan potongan ayam dan aduk hingga ayam berubah warna.</li>
+					<li>Tuangkan santan, garam, dan merica. Masak hingga ayam matang.</li>
+					<li>Taburi dengan daun ketumbar sebelum disajikan.</li>
+				</ol>
+				<button class="recipe-btn">Lihat Resep Lainnya</button>
+			</div>
+	
+			<div class="recipe">
+				<h2>4. Ayam Panggang Salad</h2>
+				<img
+					src="https://img.freepik.com/free-photo/flat-lay-salad-with-chicken-sesame-seeds_23-2148700369.jpg?ga=GA1.1.1322720273.1722496061&semt=ais_hybrid"
+					alt="Ayam Panggang Salad"
+				/>
+				<p>
+					Kombinasi salad segar dengan ayam panggang yang lezat menjadikan hidangan ini
+					pilihan yang sehat dan bergizi.
+				</p>
+				<h3>Bahan-bahan:</h3>
+				<ul>
+					<li>1 kg ayam panggang, suwir-suwir</li>
+					<li>4 cangkir campuran sayuran (selada, tomat, mentimun)</li>
+					<li>1/2 cangkir keju feta, hancurkan</li>
+					<li>1/4 cangkir kacang almond, sangrai</li>
+					<li>3 sdm minyak zaitun</li>
+					<li>2 sdm cuka balsamic</li>
+					<li>Garam dan merica secukupnya</li>
+				</ul>
+				<h3>Langkah-langkah:</h3>
+				<ol>
+					<li>Campurkan sayuran dalam mangkuk besar.</li>
+					<li>Tambahkan ayam suwir, keju feta, dan kacang almond.</li>
+					<li>Dalam mangkuk kecil, campurkan minyak zaitun, cuka balsamic, garam, dan merica.</li>
+					<li>Tuangkan dressing ke atas salad dan aduk hingga rata.</li>
+					<li>Sajikan segera sebagai hidangan pembuka atau utama.</li>
+				</ol>
+				<button class="recipe-btn">Lihat Resep Lainnya</button>
 			</div>
 		</div>
-
 
 		<footer>
 			<div class="footer-container">
@@ -207,7 +356,21 @@
 				<p>&copy; 2024 Stay Healthy. All rights reserved.</p>
 			</div>
 		</footer>
-
+<script>
+	function toggleMenu() {
+				const navLinks = document.getElementById("nav-links");
+				navLinks.classList.toggle("active");
+			}
+	
+			// Popover functionality (example code)
+			const cards = document.querySelectorAll('.custom-card-img');
+			cards.forEach(card => {
+				card.addEventListener('click', () => {
+					const content = card.getAttribute('data-popover-content');
+					alert(content);
+				});
+			});
+</script>
 		<script src="script.js"></script>
 	</body>
 </html>
