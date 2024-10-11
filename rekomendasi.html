@@ -17,32 +17,66 @@
 
 		<title>Rekomendasi</title>
 		<style>
-			body {
-				font-family: "Roboto", sans-serif;
-				margin: 0;
-				background-color: #f8f9fa;
-			}
-			.containers {
-				max-width: 800px;
-				margin: auto;
-				padding: 20px;
-				border-radius: 8px;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			}
-			h1 {
-				text-align: center;
-				color: #333;
-			}
-			.recommendation {
-				margin-bottom: 40px;
-			}
-			img {
-				display: block;
-				max-width: 100%;
-				height: auto;
-				margin: 0 auto;
-				border-radius: 8px;
-			}
+		      body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .custom-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .custom-card:hover {
+            transform: translateY(-10px);
+        }
+        .custom-card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .custom-card-body {
+            padding: 15px;
+        }
+        .custom-card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .custom-card-text {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .btn-wrapper {
+            text-align: center;
+        }
+        .custom-btn {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .custom-btn:hover {
+            background-color: #ff4c4c;
+        }
 		</style>
 	</head>
 	<body>
@@ -121,134 +155,197 @@
 		</header>
 
 		<div class="containers">
-			<h1>Rekomendasi</h1>
-
-			<div class="recommendation">
-				<h2>1. Vitamin</h2>
-				<img
-					src="https://img.freepik.com/free-vector/vitamin-complex-package_23-2148488954.jpg?ga=GA1.1.1322720273.1722496061&semt=ais_hybrid"
-					alt="Vitamin"
-				/>
-				<p>
-					Vitamin adalah nutrisi penting yang dibutuhkan oleh tubuh untuk
-					berfungsi dengan baik. Makanan yang kaya akan vitamin dapat
-					meningkatkan kesehatan Anda secara keseluruhan.
-				</p>
-				<h3>Manfaat Vitamin:</h3>
-				<ul>
-					<li>Meningkatkan sistem kekebalan tubuh.</li>
-					<li>Membantu dalam pembentukan sel darah merah.</li>
-					<li>Mendukung kesehatan kulit dan mata.</li>
-					<li>Membantu metabolisme energi.</li>
-				</ul>
-				<p>
-					Untuk mendapatkan vitamin yang cukup, Anda disarankan untuk
-					mengonsumsi berbagai jenis makanan, termasuk buah-buahan, sayuran, dan
-					biji-bijian.
-				</p>
-			</div>
-
-			<div class="recommendation">
-				<h2>2. Protein</h2>
-				<img
-					src="https://as1.ftcdn.net/v2/jpg/02/13/71/36/1000_F_213713637_G1Jp5JkgLN13xZZVxXR8YQC34PXKnI1t.jpg"
-					alt="Protein"
-				/>
-				<p>
-					Protein adalah makronutrisi yang penting untuk pertumbuhan dan
-					perbaikan jaringan. Mengonsumsi cukup protein membantu membangun otot
-					dan menjaga kesehatan tubuh.
-				</p>
-				<h3>Manfaat Protein:</h3>
-				<ul>
-					<li>Membangun dan memperbaiki jaringan otot.</li>
-					<li>Mendukung fungsi imun tubuh.</li>
-					<li>Menjaga kesehatan tulang.</li>
-					<li>Memberikan rasa kenyang lebih lama.</li>
-				</ul>
-				<p>
-					Anda bisa mendapatkan protein dari berbagai sumber, termasuk daging,
-					ikan, telur, dan produk susu.
-				</p>
-			</div>
-
-			<div class="recommendation">
-				<h2>3. Latihan</h2>
-				<img
-					src="https://img.freepik.com/free-photo/athlete-stretching-outdoors-before-jogging_23-2148531052.jpg?ga=GA1.1.1322720273.1722496061&semt=ais_hybrid"
-					alt="Latihan"
-				/>
-				<p>
-					Latihan fisik secara rutin sangat penting untuk kesehatan jantung,
-					kebugaran fisik, dan kesejahteraan mental. Temukan jenis latihan yang
-					sesuai untuk Anda.
-				</p>
-				<h3>Manfaat Latihan:</h3>
-				<ul>
-					<li>Meningkatkan kesehatan jantung.</li>
-					<li>Membantu mengontrol berat badan.</li>
-					<li>Meningkatkan kualitas tidur.</li>
-					<li>Menjaga kesehatan mental dan mengurangi stres.</li>
-				</ul>
-				<p>
-					Latihan dapat mencakup berbagai aktivitas, seperti berjalan, berlari,
-					bersepeda, atau olahraga di gym.
-				</p>
-			</div>
-		</div>
-
-		<footer>
-			<div class="footer-container">
-				<div class="footer-contact">
-					<h3>Contact Us</h3>
-					<form class="contact-form" action="https://formspree.io/f/mnnqarwb" method="POST">
-						<div class="form-group">
-							<label for="name">Name:</label>
-							<input type="text" id="name" name="name" required />
+				<h1>Rekomendasi</h1>
+				<div class="grid">
+					<!-- Existing Cards -->
+					<div class="custom-card">
+						<img src="https://down-id.img.susercontent.com/file/id-11134207-7r98u-lz5yssd1sijf28@resize_w450_nl.webp" class="custom-card-img" alt="Vitamin C" title="Detail Vitamin C" data-popover-content="Vitamin C adalah antioksidan yang penting untuk sistem kekebalan tubuh.">
+						<div class="custom-card-body">
+							<h5 class="custom-card-title">Vitamin C</h5>
+							<p class="custom-card-text">Vitamin C mendukung kesehatan kulit dan sistem kekebalan tubuh. Klik di bawah untuk membeli:</p>
+							<div class="btn-wrapper">
+								<a href="https://shopee.co.id/Vitamin-C-dengan-Zinc-Capsule-Plus-1000mg-Vitamin-C-dengan-Zinc-120-kapsul-untuk-Sistem-Kekebalan-Tubuh-Produksi-Energi-Seluler-Dukungan-Antioksidan-Kesehatan-Kulit-Kolagen-i.1337922722.27458417566?sp_atk=16237cf3-a2e3-4a0f-a6c2-ac971c1b29d6&xptdk=16237cf3-a2e3-4a0f-a6c2-ac971c1b29d6" target="_blank" class="custom-btn">Beli Vitamin C</a>
+							</div>
 						</div>
-						<div class="form-group">
-							<label for="email">Email:</label>
-							<input type="email" id="email" name="email" required />
+					</div>
+				
+					<div class="custom-card">
+						<img src="https://down-id.img.susercontent.com/file/sg-11134201-7rcdv-lr676kqpyxpv1e@resize_w450_nl.webp" class="custom-card-img" alt="Vitamin D" title="Detail Vitamin D" data-popover-content="Vitamin D penting untuk kesehatan tulang dan fungsi imun.">
+						<div class="custom-card-body">
+							<h5 class="custom-card-title">Vitamin D</h5>
+							<p class="custom-card-text">Vitamin D membantu penyerapan kalsium untuk tulang yang kuat. Klik untuk membeli:</p>
+							<div class="btn-wrapper">
+								<a href="https://shopee.co.id/Nutrimax-Vitamin-Vit-D3-1000-IU-Kesehatan-Tulang-Gigi-Imunitas-Osteoporosis-Autoimun-i.102676578.6259213616?sp_atk=4cb2f2aa-9e54-4c66-a6bf-cfef309e85ac&xptdk=4cb2f2aa-9e54-4c66-a6bf-cfef309e85ac" target="_blank" class="custom-btn">Beli Vitamin D</a>
+							</div>
 						</div>
-						<div class="form-group">
-							<label for="message">Message:</label>
-							<textarea id="message" name="message" required></textarea>
+					</div>
+				
+					<!-- New Cards -->
+					<div class="custom-card">
+						<img src="https://down-id.img.susercontent.com/file/id-11134207-7r98v-m05olr8z1bi6bb@resize_w450_nl.webp" class="custom-card-img" alt="Vitamin E" title="Detail Vitamin E" data-popover-content="Vitamin E adalah antioksidan kuat yang melindungi sel.">
+						<div class="custom-card-body">
+							<h5 class="custom-card-title">Vitamin E</h5>
+							<p class="custom-card-text">Vitamin E berperan dalam menjaga kesehatan kulit. Klik di bawah untuk membeli:</p>
+							<div class="btn-wrapper">
+								<a href="https://shopee.co.id/Mulittea-Vitamin-E-1000-IU-Antioxidant-Supplements-for-Skin-Face-Immune-Health-120pcs-i.1233876986.28359183504?sp_atk=ff03d6df-cb72-49ae-8caa-2f4dd0eca706&xptdk=ff03d6df-cb72-49ae-8caa-2f4dd0eca706" target="_blank" class="custom-btn">Beli Vitamin E</a>
+							</div>
 						</div>
-						<button type="submit">Send Message</button>
-					</form>
+					</div>
+				
+					<div class="custom-card">
+						<img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdwa-ly0omua00bbg8d@resize_w450_nl.webp" class="custom-card-img" alt="Vitamin B Complex" title="Detail Vitamin B Complex" data-popover-content="Vitamin B kompleks penting untuk metabolisme energi dan fungsi sistem saraf.">
+						<div class="custom-card-body">
+							<h5 class="custom-card-title">Vitamin B Complex</h5>
+							<p class="custom-card-text">Vitamin B kompleks mendukung energi dan kesehatan mental. Klik untuk membeli:</p>
+							<div class="btn-wrapper">
+								<a href="https://shopee.com/vitamin-b-complex" target="_blank" class="custom-btn">Beli Vitamin B Complex</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="custom-card">
+						<img src="https://down-id.img.susercontent.com/file/sg-11134201-7rd51-lwtvgbwnps0p2a@resize_w450_nl.webp" class="custom-card-img" alt="Vitamin A" title="Detail Vitamin A" data-popover-content="Vitamin A penting untuk penglihatan dan sistem imun.">
+						<div class="custom-card-body">
+							<h5 class="custom-card-title">Vitamin A</h5>
+							<p class="custom-card-text">Vitamin A berperan dalam menjaga kesehatan mata. Klik di bawah ini untuk membeli:</p>
+							<div class="btn-wrapper">
+								<a href="https://shopee.co.id/Alliwise-Vitamin-A-10-000-IU-Capsules-from-Cod-Liver-Oil-Supports-Vision-and-Cellular-Health-Healthy-Growth-Reproduction-Immune-Skin-Health-120pcs-Kapsul-Vit-A-dari-Minyak-Hati-Ikan-Cod-untuk-Reproduksi-Penglihatan-Kekebalan-Kesehatan-Kulit-i.1244076821.27203498896?sp_atk=fab22f0b-2394-4db5-9ad7-47101bd4d7aa&xptdk=fab22f0b-2394-4db5-9ad7-47101bd4d7aa" target="_blank" class="custom-btn">Beli Vitamin A</a>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="wrapper">
-					<h3>Follow Us</h3>
-                    <div class="button">
-                        <a href="https://facebook.com" target="_blank">
-                            <div class="icon"><i class="fab fa-facebook-f"></i></div>
-                            <span>Facebook</span>
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="https://twitter.com" target="_blank">
-                            <div class="icon"><i class="fab fa-twitter"></i></div>
-                            <span>Twitter</span>
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="https://github.com/NicholasHG25/Front-End-UTS" target="_blank">
-                            <div class="icon"><i class="fab fa-github"></i></div>
-                            <span>Github</span>
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="https://instagram.com" target="_blank">
-                            <div class="icon"><i class="fab fa-instagram"></i></div>
-                            <span>Instagram</span>
-                        </a>
-                    </div>
-                </div>
+				
 			</div>
-			<div class="footer-bottom">
-				<p>&copy; 2024 Stay Healthy. All rights reserved.</p>
+	
+			<h2>2.Protein</h2>
+			<div class="grid">
+				<div class="custom-card">
+					<img src="https://down-id.img.susercontent.com/file/sg-11134201-23020-e47dw56rwinv7d@resize_w450_nl.webp" class="custom-card-img" alt="Whey Protein" title="Whey Protein" data-popover-content="Whey Protein adalah sumber protein berkualitas tinggi yang membantu membangun otot.">
+					<div class="custom-card-body">
+						<h5 class="custom-card-title">Whey Protein</h5>
+						<p class="custom-card-text">Whey protein sangat efektif untuk membangun massa otot. Klik di bawah untuk membeli:</p>
+						<div class="btn-wrapper">
+							<a href="https://shopee.co.id/ON-WGS-WheyGold-Whey-Gold-Standard-5-Lbs-5Lbs-5Lb-5-Lb-Whey-Protein-Isolate-Optimum-Nutrition-i.28888930.579492164?sp_atk=3283cd43-7f73-4def-a90d-897f211c6c66&xptdk=3283cd43-7f73-4def-a90d-897f211c6c66" target="_blank" class="custom-btn">Beli Whey Protein</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="custom-card">
+					<img src="https://down-id.img.susercontent.com/file/id-11134207-7rase-m0e42ourje581f@resize_w450_nl.webp" class="custom-card-img" alt="Casein Protein" title="Casein Protein" data-popover-content="Casein Protein adalah sumber protein lambat yang membantu pemulihan otot saat tidur.">
+					<div class="custom-card-body">
+						<h5 class="custom-card-title">Casein Protein</h5>
+						<p class="custom-card-text">Dapatkan manfaat protein yang berkelanjutan dengan casein. Klik untuk membeli:</p>
+						<div class="btn-wrapper">
+							<a href="https://shopee.co.id/MUSCLE-FIRST-Pro-Casein-2lbs-900gr-Whey-Protein-Suplemen-Fitness-i.8802988.2559112272?sp_atk=92797583-8674-4792-8dd9-629b774229f5&xptdk=92797583-8674-4792-8dd9-629b774229f5" target="_blank" class="custom-btn">Beli Casein Protein</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="custom-card">
+					<img src="https://down-id.img.susercontent.com/file/id-11134207-7r98v-lufwkal1hacx86@resize_w450_nl.webp" class="custom-card-img" alt="Soy Protein" title="Soy Protein" data-popover-content="Soy Protein adalah pilihan protein nabati yang baik untuk vegetarian.">
+					<div class="custom-card-body">
+						<h5 class="custom-card-title">Soy Protein</h5>
+						<p class="custom-card-text">Pilihan protein nabati yang baik untuk diet vegetarian. Klik untuk membeli:</p>
+						<div class="btn-wrapper">
+							<a href="https://shopee.co.id/Biotech-ISOWHEY-ZERO-BLACK-PROTEIN-908gram-i.37402463.22323884878?sp_atk=7cb2535f-d6d6-4130-9180-ef42d57ac7ac&xptdk=7cb2535f-d6d6-4130-9180-ef42d57ac7ac" target="_blank" class="custom-btn">Beli Soy Protein</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="custom-card">
+					<img src="https://down-id.img.susercontent.com/file/id-11134207-7rash-m16fsq4gnj8l0b@resize_w450_nl.webp" class="custom-card-img" alt="Pea Protein" title="Pea Protein" data-popover-content="Pea Protein adalah sumber protein nabati yang kaya akan asam amino.">
+					<div class="custom-card-body">
+						<h5 class="custom-card-title">Pea Protein</h5>
+						<p class="custom-card-text">Protein dari kacang polong yang cocok untuk vegetarian. Klik di bawah ini untuk membeli:</p>
+						<div class="btn-wrapper">
+							<a href="https://shopee.co.id/PURO-VEGA-PRO-Pea-Protein-Isolate-600gr-i.268532080.22560017274?sp_atk=5517954f-5401-456f-ac09-c104cf62645e&xptdk=5517954f-5401-456f-ac09-c104cf62645e" target="_blank" class="custom-btn">Beli Pea Protein</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="custom-card">
+					<img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lv46bafgjln134@resize_w450_nl.webp" class="custom-card-img" alt="Protein Bar" title="Protein Bar" data-popover-content="Protein Bar adalah camilan tinggi protein yang praktis untuk dibawa.">
+					<div class="custom-card-body">
+						<h5 class="custom-card-title">Protein Bar</h5>
+						<p class="custom-card-text">Camilan yang mudah dan lezat dengan kandungan protein tinggi. Klik untuk membeli:</p>
+						<div class="btn-wrapper">
+							<a href="https://shopee.co.id/Evolene-Protein-Bar-Evobar-Coklat-i.244776591.19249783089?sp_atk=6500d1d1-7307-4858-b120-7a0dda50497f&xptdk=6500d1d1-7307-4858-b120-7a0dda50497f" target="_blank" class="custom-btn">Beli Protein Bar</a>
+						</div>
+					</div>
+				</div>
+				
+                
 			</div>
-		</footer>
+			<footer>
+				<div class="footer-container">
+					<div class="footer-contact">
+						<h3>Contact Us</h3>
+						<form class="contact-form" action="https://formspree.io/f/mnnqarwb" method="POST">
+							<div class="form-group">
+								<label for="name">Name:</label>
+								<input type="text" id="name" name="name" required />
+							</div>
+							<div class="form-group">
+								<label for="email">Email:</label>
+								<input type="email" id="email" name="email" required />
+							</div>
+							<div class="form-group">
+								<label for="message">Message:</label>
+								<textarea id="message" name="message" required></textarea>
+							</div>
+							<button type="submit">Send Message</button>
+						</form>
+					</div>
+					<div class="wrapper">
+						<h3>Follow Us</h3>
+						<div class="button">
+							<a href="https://facebook.com" target="_blank">
+								<div class="icon"><i class="fab fa-facebook-f"></i></div>
+								<span>Facebook</span>
+							</a>
+						</div>
+						<div class="button">
+							<a href="https://twitter.com" target="_blank">
+								<div class="icon"><i class="fab fa-twitter"></i></div>
+								<span>Twitter</span>
+							</a>
+						</div>
+						<div class="button">
+							<a href="https://github.com/NicholasHG25/Front-End-UTS" target="_blank">
+								<div class="icon"><i class="fab fa-github"></i></div>
+								<span>Github</span>
+							</a>
+						</div>
+						<div class="button">
+							<a href="https://instagram.com" target="_blank">
+								<div class="icon"><i class="fab fa-instagram"></i></div>
+								<span>Instagram</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2024 Stay Healthy. All rights reserved.</p>
+				</div>
+			</footer>
+	
+
+		<script>
+			function toggleMenu() {
+				const navLinks = document.getElementById("nav-links");
+				navLinks.classList.toggle("active");
+			}
+	
+			// Popover functionality (example code)
+			const cards = document.querySelectorAll('.custom-card-img');
+			cards.forEach(card => {
+				card.addEventListener('click', () => {
+					const content = card.getAttribute('data-popover-content');
+					alert(content);
+				});
+			});
+		</script>
+
 		<script src="script.js"></script>
 	</body>
 </html>

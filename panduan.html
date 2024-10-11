@@ -17,32 +17,67 @@
 
 		<title>Panduan</title>
 		<style>
-			body {
-				font-family: "Roboto", sans-serif;
-				margin: 0;
-				background-color: #f8f9fa;
-			}
-			.containers {
-				max-width: 800px;
-				margin: auto;
-				padding: 20px;
-				border-radius: 8px;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			}
-			h1 {
-				text-align: center;
-				color: #333;
-			}
-			.guide {
-				margin-bottom: 40px;
-			}
-			img {
-				display: block;
-				max-width: 100%;
-				height: auto;
-				margin: 0 auto;
-				border-radius: 8px;
-			}
+		        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .custom-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .custom-card:hover {
+            transform: translateY(-10px);
+        }
+        .custom-card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .custom-card-body {
+            padding: 15px;
+        }
+        .custom-card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .custom-card-text {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .btn-wrapper {
+            text-align: center;
+        }
+        .custom-btn {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .custom-btn:hover {
+            background-color: #ff4c4c;
+        }
+
 		</style>
 	</head>
 	<body>
@@ -121,42 +156,186 @@
 
 		<div class="containers">
 			<h1>Panduan Latihan</h1>
+			<div class="grid">
+				<!-- Existing Cards -->
+				<div class="custom-card">
+					<img src="https://www.tagar.id/Asset/uploads2019/1644995887567-olahraga-cardio.jpg" class="custom-card-img" alt="Kardio" title="Detail Latihan Kardio" data-popover-content="Latihan kardio adalah jenis latihan yang meningkatkan detak jantung dan pernapasan Anda untuk menjaga kebugaran. Cocok untuk pemula hingga tingkat lanjut.">
+					<div class="custom-card-body">
+						<h5 class="custom-card-title">Latihan Kardio</h5>
+						<p class="custom-card-text">Latihan kardio adalah latihan yang berfokus pada pembakaran kalori dan peningkatan kesehatan jantung. Klik di bawah untuk memulai latihan sederhana di rumah:</p>
+						<div class="btn-wrapper">
+							<a href="https://youtu.be/0YCbphEiQgM?si=6vq17BwK7Kgr-BHz" target="_blank" class="custom-btn">Latihan Cardio Mudah</a>
+						</div>
+					</div>
+				</div>
+	
+				<div class="custom-card">
+					<img src="https://th.bing.com/th/id/OIP.zi20eGfe2ZO9Vo52cWDnxAHaE8?w=254&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="custom-card-img" alt="Warm up" title="Pemanasan" data-popover-content="Pemanasan atau warm-up penting untuk mempersiapkan tubuh sebelum latihan intens. Ini membantu meningkatkan sirkulasi darah dan fleksibilitas otot.">
+					<div class="custom-card-body">
+						<h5 class="custom-card-title">Warm Up</h5>
+						<p class="custom-card-text">Lakukan pemanasan singkat untuk mempersiapkan tubuh sebelum latihan. Klik untuk melihat video panduan pemanasan yang aman:</p>
+						<div class="btn-wrapper">
+							<a href="https://youtu.be/KpraNmEu_oI?si=lFPv1i8MZaZTyvTA" target="_blank" class="custom-btn">Lihat Warming Up</a>
+						</div>
+					</div>
+				</div>
+	
+		 
+	
+				<!-- New Cards -->
+				<div class="custom-card">
+					<img src="https://i0.wp.com/vshred.com/blog/wp-content/uploads/2019/09/15-DIFFERENT-HIIT-CARDIO-EXERCISES-FOR-MAX-CALORIE-BURN-workout.png?resize=656%2C454&ssl=1" class="custom-card-img" alt="HIT Cardio" title="HIT Cardio" data-popover-content="Latihan HIT Cardio berdurasi 15 menit ini dirancang untuk membakar kalori dengan cepat. Cocok bagi yang ingin latihan singkat namun efektif.">
+					<div class="custom-card-body">
+						<h5 class="custom-card-title">HIT Cardio 15 Menit</h5>
+						<p class="custom-card-text">Butuh latihan singkat dan efektif? Cobalah HIT Cardio ini! Klik di bawah untuk memulai sesi 15 menit yang intens:</p>
+						<div class="btn-wrapper">
+							<a href="https://youtu.be/Fc85U3UgC0E?si=RRvRPfiUZpc6rQz4" target="_blank" class="custom-btn">Lihat HIT Cardio</a>
+						</div>
+					</div>
+				</div>
+	
+				<div class="custom-card">
+					<img src="https://i.ytimg.com/vi/jVRlQFSsODg/maxresdefault.jpg" class="custom-card-img" alt="Dance Cardio" title="Dance Cardio" data-popover-content="Nikmati latihan Dance Cardio untuk menjaga tubuh tetap bugar sambil bersenang-senang. Cocok untuk semua level!">
+					<div class="custom-card-body">
+						<h5 class="custom-card-title">Dance Cardio</h5>
+						<p class="custom-card-text">Latihan menyenangkan yang menggabungkan tarian dengan cardio untuk membakar kalori. Klik di bawah ini untuk melihat videonya:</p>
+						<div class="btn-wrapper">
+							<a href="https://youtu.be/D4-9N7edll0?si=4owTBEad2N5gmORQ" target="_blank" class="custom-btn">Lihat Dance Cardio</a>
+						</div>
+					</div>
+				</div>
+	
+				<div class="custom-card">
+					<img src="https://th.bing.com/th/id/OIP.ItAffwuC6cXI1ZCmMCTWKgAAAA?rs=1&pid=ImgDetMaihttps://i.pinimg.com/originals/22/d0/1f/22d01f7f0b82e9c5c8d590a63024d62a.jpg" class="custom-card-img" alt="Cardio and Full Body Workout" title="Cardio & Full Body Workout" data-popover-content="Latihan intensitas tinggi yang menggabungkan cardio dan latihan seluruh tubuh untuk pembentukan otot dan pembakaran lemak maksimal.">
+					<div class="custom-card-body">
+						<h5 class="custom-card-title">Cardio and Full Body Workout</h5>
+						<p class="custom-card-text">Sesi latihan yang intens untuk meningkatkan massa otot sambil membakar lemak. Klik di bawah ini untuk melihat videonya:</p>
+						<div class="btn-wrapper">
+							<a href="https://youtu.be/SVMXa2FDh58?si=kM6A6H2Z9mAN6P4n" target="_blank" class="custom-btn">Lihat Full Body Workout</a>
+						</div>
+					</div>
+				</div>
+		</div>
 
-			<div class="guide">
-				<h2>1. Latihan Kardio</h2>
-				<img
-					src="https://olimpsport.com/media/mageplaza/blog/post/image//w/y/wyprobuj-5-najlepszych-cwiczen-cardio-na-silowni_5.jpg"
-					alt="Latihan Kardio"
-				/>
-				<p>
-					Panduan latihan kardio untuk membakar lemak dan meningkatkan kesehatan
-					jantung.
-				</p>
+		<h2>2.Latihan Kekuatan</h2>
+		<div class="grid">
+			<!-- Existing Card -->
+			<div class="custom-card">
+				<img src="https://th.bing.com/th/id/OIP.H_jyZ1qNxLuYPIu9LTPk_AHaEK?w=287&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="custom-card-img" alt=" LatihanDumbbell" title="Dumbbell Workout" data-popover-content="Latihan menggunakan dumbbell efektif untuk meningkatkan kekuatan dan pembentukan otot. Cocok untuk pemula hingga lanjutan.">
+				<div class="custom-card-body">
+					<h5 class="custom-card-title">Latihan Dumbbell</h5>
+					<p class="custom-card-text">Gunakan dumbbell untuk meningkatkan kekuatan otot Anda. Klik untuk melihat video panduan latihan dumbbell:</p>
+					<div class="btn-wrapper">
+						<a href="https://youtu.be/oMOrlvli-40?si=bCp5lrdbIahCzF5e" target="_blank" class="custom-btn">Lihat Latihan Dumbbell</a>
+					</div>
+				</div>
+			</div>
+		
+			<!-- New Strength Training Cards -->
+			<div class="custom-card">
+				<img src="https://th.bing.com/th/id/OIP.e7T9yX4eQ-rzU6htGOp7JAHaE8?w=253&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="custom-card-img" alt="Squat" title="Latihan Squat" data-popover-content="Squat adalah latihan dasar yang membantu membangun kekuatan otot kaki dan inti.">
+				<div class="custom-card-body">
+					<h5 class="custom-card-title">Latihan Squat</h5>
+					<p class="custom-card-text">Pelajari teknik squat yang benar untuk meningkatkan kekuatan otot kaki Anda. Klik di bawah untuk melihat videonya:</p>
+					<div class="btn-wrapper">
+						<a href="https://youtu.be/aCQCvOfkXQY?si=B4dyzd9AaB4OMRvd" target="_blank" class="custom-btn">Lihat Latihan Squat</a>
+					</div>
+				</div>
+			</div>
+		
+			<div class="custom-card">
+				<img src="https://th.bing.com/th/id/R.08a48cb6d4717d6655f437d5560d26f8?rik=oP0JmtFFlUNtcw&riu=http%3a%2f%2freps-id.com%2fwp-content%2fuploads%2f2014%2f01%2f264.jpg&ehk=QbQ%2bM0ZpcxercqRqs3rWzxdNzTrdJ4ym2jfV4yRagFs%3d&risl=&pid=ImgRaw&r=0" class="custom-card-img" alt="Deadlift" title="Latihan Deadlift" data-popover-content="Deadlift adalah latihan komprehensif yang melibatkan banyak otot untuk kekuatan dan stabilitas.">
+				<div class="custom-card-body">
+					<h5 class="custom-card-title">Latihan Deadlift</h5>
+					<p class="custom-card-text">Kuasai teknik deadlift untuk membangun kekuatan punggung dan kaki. Klik di bawah ini untuk melihat videonya:</p>
+					<div class="btn-wrapper">
+						<a href="https://youtu.be/fdr-oCBytuE?si=hr5j2_YquuWfORsX" target="_blank" class="custom-btn">Lihat Latihan Deadlift</a>
+					</div>
+				</div>
+			</div>
+		
+			<div class="custom-card">
+				<img src="https://images.pexels.com/photos/3837743/pexels-photo-3837743.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="custom-card-img" alt="Bench Press" title="Latihan Bench Press" data-popover-content="Bench press adalah latihan dasar untuk meningkatkan kekuatan otot dada, bahu, dan trisep.">
+				<div class="custom-card-body">
+					<h5 class="custom-card-title">Latihan Bench Press</h5>
+					<p class="custom-card-text">Tingkatkan kekuatan otot dada Anda dengan bench press. Klik di bawah ini untuk melihat panduan latihan:</p>
+					<div class="btn-wrapper">
+						<a href="https://youtu.be/6smdlm2yLo8?si=qSs_bA4xtP4S-DTX" target="_blank" class="custom-btn">Lihat Latihan Bench Press</a>
+					</div>
+				</div>
+			</div>
+		
+			<div class="custom-card">
+				<img src="https://th.bing.com/th/id/OIP.mPHaLYax1izri_UIh9RvQAHaE8?w=240&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="custom-card-img" alt="Pull Up" title="Latihan Pull Up" data-popover-content="Pull up adalah latihan tubuh bagian atas yang hebat untuk kekuatan punggung dan lengan.">
+				<div class="custom-card-body">
+					<h5 class="custom-card-title">Latihan Pull Up</h5>
+					<p class="custom-card-text">Pelajari teknik pull up untuk membangun kekuatan punggung Anda. Klik di bawah ini untuk melihat videonya:</p>
+					<div class="btn-wrapper">
+						<a href="https://youtu.be/xf7ctwjcYjo?si=jgN4shpoHKaDlZ8J" target="_blank" class="custom-btn">Lihat Latihan Pull Up</a>
+					</div>
+				</div>
 			</div>
 
-			<div class="guide">
-				<h2>2. Latihan Kekuatan</h2>
-				<img
-					src="https://olimpsport.com/media/mageplaza/blog/post/image//w/y/wyprobuj-5-najlepszych-cwiczen-cardio-na-silowni_5.jpg"
-					alt="Latihan Kekuatan"
-				/>
-				<p>
-					Latihan kekuatan membantu membangun otot dan meningkatkan kekuatan
-					tubuh secara keseluruhan.
-				</p>
+			
+		</div>
+		<h3>3.latihan fleksibilitas</h3>
+		<div class="grid">
+			<!-- Existing Card -->
+			<div class="custom-card">
+				<img src="https://th.bing.com/th/id/OIP.WmH6lomSFx6huBrSPAJvwAHaEK?w=278&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+				<div class="custom-card-body">
+					<h5 class="custom-card-title">Rutin Perenggangan Senam</h5>
+					<p class="custom-card-text">Lakukan rutin perenggangan untuk meningkatkan fleksibilitas dan memperbaiki teknik senam Anda. Klik di bawah untuk melihat panduan:</p>
+					<div class="btn-wrapper">
+						<a href="https://youtu.be/vej7pZ7nOFg?si=vO6WG1BI3uBrnbnE" target="_blank" class="custom-btn">Lihat Rutin Senam</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="custom-card">
+				<img src="https://i.ytimg.com/vi/1z5fKm-5qfQ/maxresdefault.jpg" class="custom-card-img" alt="Pilates Flexibility Training" title="Pilates Flexibility Training" data-popover-content="Pilates dapat meningkatkan fleksibilitas tubuh dan mencegah cedera saat latihan.">
+				<div class="custom-card-body">
+					<h5 class="custom-card-title">Latihan Fleksibilitas Pilates</h5>
+					<p class="custom-card-text">Latihan fleksibilitas Pilates dapat membantu meningkatkan postur dan keseimbangan tubuh. Klik di bawah untuk melihat videonya:</p>
+					<div class="btn-wrapper">
+						<a href="https://youtu.be/pWuiIQtDHfo?si=9qPlLajvwMbokVbA" target="_blank" class="custom-btn">Latihan Pilates Fleksibilitas</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="custom-card">
+				<img src="https://th.bing.com/th/id/OIP.BazNRT45KaK1TAirXQSyZQAAAA?rs=1&pid=ImgDetMain" class="custom-card-img" alt="Pilates Stretching" title="Pilates Stretching" data-popover-content="Latihan Pilates yang meningkatkan fleksibilitas dan kekuatan tubuh.">
+				<div class="custom-card-body">
+					<h5 class="custom-card-title">Perenggangan Pilates</h5>
+					<p class="custom-card-text">Latihan Pilates ini bertujuan untuk meningkatkan fleksibilitas dan keseimbangan tubuh. Klik di bawah untuk melihat videonya:</p>
+					<div class="btn-wrapper">
+						<a href="https://youtu.be/C2HX2pNbUCM?si=JExxSQ8tnCZHRxdP" target="_blank" class="custom-btn">Latihan Pilates Fleksibilitas</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="custom-card">
+				<img src="https://www.thoughtco.com/thmb/9AgjojcP-UNEqFwpNXb8EjR7hGc%3d/3865x2576/filters:no_upscale():max_bytes(150000):strip_icc()/gymnasts-in-a-row-doing-handstands-87319480-59b87e2d9abed50011dc26ac.jpg" class="custom-card-img" alt="Gymnastics Stretching" title="Gymnastics Stretching" data-popover-content="Latihan perenggangan untuk meningkatkan fleksibilitas dalam senam. Cocok untuk pemula hingga tingkat lanjut.">
+				<div class="custom-card-body">
+					<h5 class="custom-card-title">Perenggangan Senam</h5>
+					<p class="custom-card-text">Tingkatkan fleksibilitas Anda dengan perenggangan yang dirancang untuk mendukung latihan senam. Klik di bawah untuk memulai latihan:</p>
+					<div class="btn-wrapper">
+						<a href="https://youtu.be/E1xlr8Z5uYQ?si=lH0F3yh_ncdML47m" target="_blank" class="custom-btn">Latihan Perenggangan Senam</a>
+					</div>
+				</div>
 			</div>
 
-			<div class="guide">
-				<h2>3. Latihan Fleksibilitas</h2>
-				<img
-					src="https://olimpsport.com/media/mageplaza/blog/post/image//w/y/wyprobuj-5-najlepszych-cwiczen-cardio-na-silowni_5.jpg"
-					alt="Latihan Fleksibilitas"
-				/>
-				<p>
-					Panduan untuk meningkatkan fleksibilitas dengan latihan peregangan
-					yang mudah dilakukan.
-				</p>
+			<div class="custom-card">
+				<img src="data:image/jpeg;base64,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" alt="Perenggangan Yoga">
+				<div class="custom-card-body">
+					<h5 class="custom-card-title">Perenggangan Yoga</h5>
+					<p class="custom-card-text">Manfaatkan latihan yoga untuk meningkatkan fleksibilitas dan mengurangi stres. Klik di bawah untuk mulai latihan:</p>
+					<div class="btn-wrapper">
+						<a href="https://youtu.be/ZgNhZgz_SVA?si=yPMF0bQ4ehxwmx0n" target="_blank" class="custom-btn">Latihan Yoga Fleksibilitas</a>
+					</div>
+				</div>
 			</div>
+						
 		</div>
 
 		<footer>
@@ -213,7 +392,22 @@
 		</footer>
 
 		
-		
+		<script>
+			function toggleMenu() {
+				const navLinks = document.getElementById("nav-links");
+				navLinks.classList.toggle("active");
+			}
+	
+			// Popover functionality (example code)
+			const cards = document.querySelectorAll('.custom-card-img');
+			cards.forEach(card => {
+				card.addEventListener('click', () => {
+					const content = card.getAttribute('data-popover-content');
+					alert(content);
+				});
+			});
+		</script>
+
 		<script src="script.js"></script>
 	</body>
 </html>
